@@ -5,16 +5,15 @@ import org.openqa.selenium.WebDriver;
 
 public class SearchGooglePage extends BasePage{
 
-    //locators
-    private By inputSearchLocator = By.xpath("//input[@title='Поиск']");
-    private By searchButtonLocator = By.xpath("//div[@class='aajZCb']//input[@aria-label='Поиск в Google']");
-
-
-    //steps
     public SearchGooglePage(WebDriver driver) {
         super(driver);
     }
 
+    //locators
+    private By inputSearchLocator = By.xpath("//input[@title='Поиск']");
+    private By searchButtonLocator = By.xpath("//div[@class='aajZCb']//input[@aria-label='Поиск в Google']");
+
+    //steps
     public SearchGooglePage openPage(){
          driver.get("https://www.google.com/");
          return this;

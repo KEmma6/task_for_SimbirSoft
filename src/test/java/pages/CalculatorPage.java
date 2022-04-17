@@ -21,7 +21,6 @@ public class CalculatorPage extends BasePage{
     private String calculatorButtonsLocator = "//div[text()='%s']";
     private By memoryStringLocator = By.xpath("//span[@class='vUGUtc']");
 
-
     //steps
     public CalculatorPage inputValueToCalculatorField(String value){
         List<String> list = new ArrayList(Arrays.asList(value.split(" ")));
